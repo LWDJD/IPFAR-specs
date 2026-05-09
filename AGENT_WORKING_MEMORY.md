@@ -32,10 +32,12 @@
 - 二、元数据 JSON 格式（version、method、root_cid、data_txid、data_height、data_size、reference、content_type、original_name、pow、pow_alg）
 - 三、CAR v2 文件格式（基本要求、上传方式 `raw/bundle`、分块机制、验证要求）
 - 四、引用 Reference（设计目标、格式、分块方式、引用粒度、传输与本地格式、链式解析、限制）
+
+已移至 `项目规划.md`「附录：数据结构规范细则」：
 - 五、PoW（算法 `argon2id-light-v1`、难度曲线、验证）
 - 六、防垃圾与经济缓解
 - 七、重复 CID 处理
-- 八、发现流程（§8.3「可配置验证选项」已移至 `项目规划.md` 四、桥节点行为末尾，配置键名改为中文：`验证工作量`/`验证数据头`/`验证数据合法性`）
+- 八、发现流程（§8.1~§8.2；§8.3 此前已移至 `项目规划.md` 四、桥节点行为末尾）
 
 ## Pro 对比分析（2026-05-08）
 
