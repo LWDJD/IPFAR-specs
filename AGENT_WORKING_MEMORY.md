@@ -35,7 +35,7 @@
 - 五、PoW（算法 `argon2id-light-v1`、难度曲线、验证）
 - 六、防垃圾与经济缓解
 - 七、重复 CID 处理
-- 八、发现流程
+- 八、发现流程（§8.3「可配置验证选项」已移至 `项目规划.md` 四、桥节点行为末尾，配置键名改为中文：`验证工作量`/`验证数据头`/`验证数据合法性`）
 
 ## Pro 对比分析（2026-05-08）
 
@@ -86,7 +86,7 @@
 | arweave-light | v0.3.9 MVP 暂停，等待官方 Merkle 证明 API |
 
 ## Git 协作规范
-
-- 每次推送创建新分支，提交后用户合并删除
-- IPFAR-specs 推送到 `init-spec-draft` 分支，需 PR → dev
-- SSH 密钥：`~/.ssh/id_ed25519_ipfar`，Host `github.com-ipfar-specs`
+- 每次推送创建**新分支**（如 `feat/xxx`、`fix/xxx`、`docs/xxx`），不复用旧分支名
+- 用户合并 PR 后删除远端分支
+- 本地同步：`git fetch origin --prune && git reset --hard origin/dev`
+- SSH: `~/.ssh/id_ed25519_ipfar`，Host `github.com-ipfar-specs`
